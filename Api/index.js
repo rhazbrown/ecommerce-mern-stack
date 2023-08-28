@@ -32,7 +32,7 @@ app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.get("/api/products", (req) => {
-  req.json(productRoute);
+  req.json({ productRoute });
 });
 app.use("/api/carts", cartRoute);
 app.use("/api/orders", orderRoute);
