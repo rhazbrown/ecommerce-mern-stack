@@ -29,7 +29,7 @@ app.get("/api/products", (req, res) => {
   res.json("productRoute");
 });
 app.get("/", (req, res) => {
-  res.json(productRoute);
+  res.send(productRoute);
 });
 app.use(express.json());
 app.use("/api/auth", authRoute);
