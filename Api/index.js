@@ -25,10 +25,8 @@ app.use(
     credentials: true,
   })
 );
-app.get("/api/products", (req, res) => {
-  res.json("productRoutess");
-});
-app.use("/", productRoute);
+app.use("/", heloo);
+app.use("/api/products", productRoute);
 app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
