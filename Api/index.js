@@ -19,7 +19,7 @@ mongoose
   });
 
 app.use(cors());
-app.use("/", "heloooo");
+app.use("/", "helooooo");
 app.use("/api/products", productRoute);
 app.use(express.json());
 app.use("/api/auth", authRoute);
