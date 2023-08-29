@@ -26,7 +26,7 @@ app.use(
   })
 );
 app.get("/api/products", (req, res) => {
-  res.json("productRoutes");
+  res.json("productRoutess");
 });
 app.use("/", productRoute);
 app.use(express.json());
