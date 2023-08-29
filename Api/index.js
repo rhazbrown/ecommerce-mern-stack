@@ -18,7 +18,14 @@ mongoose
     console.log(err);
   });
 
-app.use(cors());
+// app.use(cors());
+const corsConfig = {
+  origin: "",
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE"],
+};
+app.use(cors(corsConfig));
+app.options("", cors(corsConfig));
 app.use("/", "helo");
 app.use("/api/products", productRoute);
 app.use(express.json());
