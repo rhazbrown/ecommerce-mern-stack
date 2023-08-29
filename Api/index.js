@@ -24,7 +24,7 @@ app.use(
     credentials: true,
   })
 );
-app.use("/", "helo");
+app.use("/", "helooo");
 app.use("/api/products", productRoute);
 app.use(express.json());
 app.use("/api/auth", authRoute);
