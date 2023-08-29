@@ -18,12 +18,7 @@ mongoose
     console.log(err);
   });
 
-app.use(
-  cors({
-    origin: ["https://ecommerce-mern-stack-api.vercel.app"],
-    credentials: true,
-  })
-);
+app.use(cors());
 app.use("/", "heloooo");
 app.use("/api/products", productRoute);
 app.use(express.json());
