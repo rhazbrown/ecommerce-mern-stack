@@ -18,13 +18,7 @@ mongoose
     console.log(err);
   });
 const app = express();
-app.use(
-  cors({
-    origin: ["https://ecommerce-mern-stack-api.vercel.app"],
-    methods: ["POST", "GET", "USE"],
-    credentials: true,
-  })
-);
+app.use(cors());
 app.get("/", (req, res) => {
   res.json("Helo");
 });
