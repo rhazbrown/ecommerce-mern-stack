@@ -26,7 +26,7 @@ app.use(
   })
 );
 app.get("/api/products", (req, res) => {
-  res.json("productRoute");
+  res.json("productRoutes");
 });
 app.get("/", (req, res) => {
   res.send(productRoute);
