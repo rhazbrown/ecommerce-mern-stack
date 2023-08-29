@@ -31,7 +31,7 @@ app.get("/", (req, res) => {
 app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
-app.get("/api/products", (res) => {
+app.get("/", (res) => {
   res.json("productRoute");
 });
 app.use("/api/carts", cartRoute);
