@@ -26,7 +26,7 @@ app.use(
   })
 );
 app.use("/", heloo);
-app.use("/api/products", productRoute);
+app.use("/api/productss", productRoute);
 app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
