@@ -25,9 +25,9 @@ app.use(
     credentials: true,
   })
 );
-app.get("/", (req, res) => {
-  res.json("Helo");
-});
+// app.get("/", (req, res) => {
+//   res.json("Helo");
+// });
 app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
