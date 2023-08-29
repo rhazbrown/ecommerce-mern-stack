@@ -28,9 +28,7 @@ app.use(
 app.get("/api/products", (req, res) => {
   res.json("productRoutes");
 });
-app.get("/", (req, res) => {
-  res.send(productRoute);
-});
+app.use("/", productRoute);
 app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
