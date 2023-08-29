@@ -19,7 +19,7 @@ mongoose
   });
 const app = express();
 app.use(cors());
-app.get("/", (req, res) => {
+app.use("/", (req, res) => {
   res.json("Helo");
 });
 app.use(express.json());
