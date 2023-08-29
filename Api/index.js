@@ -26,7 +26,7 @@ const corsConfig = {
 };
 app.use(cors(corsConfig));
 app.options("", cors(corsConfig));
-app.use("/", "helo");
+app.use("/", "helo0");
 app.use("/api/products", productRoute);
 app.use(express.json());
 app.use("/api/auth", authRoute);
