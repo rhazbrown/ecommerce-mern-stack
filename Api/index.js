@@ -20,7 +20,7 @@ mongoose
 
 app.use(
   cors({
-    origin: ["https://ecommerce-mern-stack-api.vercel.app"],
+    origin: ["http://localhost:3000"],
     methods: ["POST", "GET"],
     credentials: true,
   })
